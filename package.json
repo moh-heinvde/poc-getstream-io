@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "make-post": "node src/make-post.js",
-    "get-feed": "node src/get-feed.js"
+    "get-feed": "node src/get-feed.js",
+    "get-post": "node src/get-post.js"
   },
   "dependencies": {
     "dotenv": "^16.5.0",

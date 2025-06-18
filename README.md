@@ -49,3 +49,11 @@ Returns the feed for the `general` channel
 ```bash
 npm run get-feed
 ```
+
+### Get post
+
+Returns a post by id
+
+```bash
+npm run <post-id>
+```
