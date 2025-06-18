@@ -95,3 +95,11 @@ Make a new reaction to a post where `reaction-type` is something like `like`
 ```bash
 npm run make-reaction <post-id> <reaction-type>
 ```
+
+### Delete reaction
+
+Deletes a existing reaction for a post by reaction id
+
+```bash
+npm run make-reaction <reaction-id>
+```
