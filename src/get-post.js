@@ -38,4 +38,11 @@ if (args.length < 1) {
 }
 const postId = args[0];
 
-run({ postId }).then(resp => console.log('response', resp));//.catch(err => console.log('error', err));
+run({ postId })
+    .then(resp => console.log('response', resp))
+    .catch(err => {
+        if (!err.response || !err.response.data) {
+            throw err;
+        }
+        console.log('error', err.response.data)
+    });

@@ -38,4 +38,11 @@ const run = async ({ message }) => {
 const args = process.argv.slice(2);
 const message = args.join(' ') || 'No message provided';
 
-run({ message }).then(resp => console.log('response', resp));//.catch(err => console.log('error', err));
+run({ message })
+    .then(resp => console.log('response', resp))
+    .catch(err => {
+        if (!err.response || !err.response.data) {
+            throw err;
+        }
+        console.log('error', err.response.data)
+    });

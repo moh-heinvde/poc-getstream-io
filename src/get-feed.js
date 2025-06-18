@@ -13,4 +13,11 @@ const getCommunityFeed = async () => {
     return await feed.get({ limit: 3, id_gt: '9a592348-4b7a-11f0-8401-06bdee72734b' });
 }
 
-getCommunityFeed().then(resp => console.log('response', resp));//.catch(err => console.log('error', err));
+getCommunityFeed()
+    .then(resp => console.log('response', resp))
+    .catch(err => {
+        if (!err.response || !err.response.data) {
+            throw err;
+        }
+        console.log('error', err.response.data)
+    });

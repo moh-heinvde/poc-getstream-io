@@ -27,9 +27,11 @@ if (args.length < 2) {
 const postId = args[0];
 const message = args.slice(1).join(' ');
 
-run({ postId, message }).then(resp => console.log('response', resp)).catch(err => {
-    if (!err.response || !err.response.data) {
-        throw err;
-    }
-    console.log('error', err.response.data)
-});
+run({ postId, message })
+    .then(resp => console.log('response', resp))
+    .catch(err => {
+        if (!err.response || !err.response.data) {
+            throw err;
+        }
+        console.log('error', err.response.data)
+    });
