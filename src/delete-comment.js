@@ -6,29 +6,12 @@ require('dotenv').config();
 // Create a client
 const getStreamClient = stream.connect(process.env.GET_STREAM_API_KEY, process.env.GET_STREAM_API_SECRET);
 
-const getPost = async (postId) => {
-    const { results: posts = [] } = await getStreamClient.getActivities({
-        ids: [postId],
-        limit: 1,
-        reactions: {
-            own: true,
-            counts: true,
-        },
-    });
-    if (!posts.length) {
-        console.log('Post not found');
-        return null;
-    }
-    const [ { own_reactions: reactions, reaction_counts: reactionCounts, ...post} ] = posts;
-    return {
-        ...post,
-        comments: reactions.comment || [],
-        reactionCounts,
-    }
+const deleteReaction = async (reactionId) => {
+    return await getStreamClient.reactions.delete(reactionId);
 }
 
 const run = async ({ postId }) => {
-    return await getPost(postId);
+    return await deleteReaction(postId);
 }
 
 const args = process.argv.slice(2);

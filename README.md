@@ -79,3 +79,11 @@ Delete a post by id
 ```bash
 npm run delete-post <post-id>
 ```
+
+### Delete comment
+
+Delete a comment by id
+
+```bash
+npm run delete-comment <comment-id>
+```
