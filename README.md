@@ -4,9 +4,9 @@
 This project is a basic proof of concept that we can use getstream.io to handle our Community component for the mindful system.
 
 This project is set up as follows
-    - A new feed group was created on the dashboard called "Community"
-    - Only one channel, called `general`, is available and used throughout the application
-    - All interactions with the feed will retrieve/create/react/etc. posts/comments/reactions made to the `general` channel
+ - A new feed group was created on the dashboard called "Community"
+ - Only one channel, called `general`, is available and used throughout the application
+ - All interactions with the feed will retrieve/create/react/etc. posts/comments/reactions made to the `general` channel
 
 ## Requirements
 
