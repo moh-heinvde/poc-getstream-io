@@ -10,7 +10,7 @@ const channelName = 'general';
 
 const getCommunityFeed = async () => {
     const feed = getStreamClient.feed(communityFeed, channelName);
-    return await feed.get({ limit: 5, id_gt: '9a592348-4b7a-11f0-8401-06bdee72734b' });
+    return await feed.get({ limit: 3, id_gt: '9a592348-4b7a-11f0-8401-06bdee72734b' });
 }
 
 getCommunityFeed().then(resp => console.log('response', resp));//.catch(err => console.log('error', err));
