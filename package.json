@@ -9,7 +9,8 @@
     "make-comment": "node src/make-comment.js",
     "get-post": "node src/get-post.js",
     "delete-post": "node src/delete-post.js",
-    "delete-comment": "node src/delete-comment.js"
+    "delete-comment": "node src/delete-comment.js",
+    "make-reaction": "node src/make-reaction.js"
   },
   "dependencies": {
     "dotenv": "^16.5.0",

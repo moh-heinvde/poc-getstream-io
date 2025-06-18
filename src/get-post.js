@@ -13,6 +13,7 @@ const getPost = async (postId) => {
         reactions: {
             own: true,
             counts: true,
+            recent: true,
         },
     });
     if (!posts.length) {

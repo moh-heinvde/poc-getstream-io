@@ -87,3 +87,11 @@ Delete a comment by id
 ```bash
 npm run delete-comment <comment-id>
 ```
+
+### Make reaction
+
+Make a new reaction to a post where `reaction-type` is something like `like`
+
+```bash
+npm run make-reaction <post-id> <reaction-type>
+```
