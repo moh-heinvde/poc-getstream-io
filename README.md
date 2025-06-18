@@ -55,5 +55,19 @@ npm run get-feed
 Returns a post by id
 
 ```bash
-npm run <post-id>
+npm run get-post <post-id>
+```
+
+### Make comment
+
+Make a comment on a post
+
+```bash
+npm run make-comment <post-id> [comment]
+```
+
+Example
+
+```bash
+npm run make-comment some-uuid Yay my comment!
 ```

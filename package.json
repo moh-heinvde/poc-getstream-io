@@ -6,6 +6,7 @@
   "scripts": {
     "make-post": "node src/make-post.js",
     "get-feed": "node src/get-feed.js",
+    "make-comment": "node src/make-comment.js",
     "get-post": "node src/get-post.js"
   },
   "dependencies": {
