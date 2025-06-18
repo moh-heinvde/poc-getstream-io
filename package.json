@@ -7,7 +7,8 @@
     "make-post": "node src/make-post.js",
     "get-feed": "node src/get-feed.js",
     "make-comment": "node src/make-comment.js",
-    "get-post": "node src/get-post.js"
+    "get-post": "node src/get-post.js",
+    "delete-post": "node src/delete-post.js"
   },
   "dependencies": {
     "dotenv": "^16.5.0",

@@ -71,3 +71,11 @@ Example
 ```bash
 npm run make-comment some-uuid Yay my comment!
 ```
+
+### Delete post
+
+Delete a post by id
+
+```bash
+npm run delete-post <post-id>
+```
